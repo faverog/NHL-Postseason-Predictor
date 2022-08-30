@@ -1,9 +1,8 @@
 from sklearn import svm
 import pandas as pd
-import numpy as np
 
 # Link the Excel spreadsheet
-filePath = r"C:\Users\gmari\Desktop\Coding\NHL Postseason Predictor\2021.xlsx"
+filePath = r"2021 Season data.xlsx"
 project = pd.read_excel(filePath, None)
 
 # Link, clean, and make library from the Team Statistics Spreadsheet
@@ -65,8 +64,9 @@ for team in playoffTeams:
     teamGameTargets[f"{team}"] = targetLog
 
 # Sci Kit Learn
-
 clf = svm.SVC(kernel='rbf', C=0.5, gamma=15)
+
+# Example Prediction: Edmonton VS Tampa Bay Lightning
 clf.fit(teamGameLogs['EDM'], teamGameTargets['EDM'])
 prediction = clf.predict([teamDataLibrary['Tampa Bay Lightning']])
 
