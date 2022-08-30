@@ -10,4 +10,4 @@ A SVM model is used to categorize team performances into a typical "Win" or "Los
 ## Getting Started
 First, clones this repository. 
 
-The runnable program lies in a single script, `SVM Script.py`. In here, Lines 70-71 can be adjusted to predict a the winner of a series between two NHL teams. A sample series between the Edmonton Oilers and the Tampa Bay Lightning is provided. In this case, the program outputs a 'W', indicating that Edmonton is the predictable winner of the series.
+The runnable program lies in a single script, `SVM Script.py`. In here, Lines 70-71 can be adjusted to predict a the winner of a series between two NHL teams. A sample series between the Edmonton Oilers and the Tampa Bay Lightning is provided. In this case, the program outputs a 'W', indicating that Edmonton is the predicted winner of the series.
